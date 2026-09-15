@@ -3,48 +3,47 @@
 > Copy file này thành `<reviewer>-review-<annotator>.md` trong `nhat-ky-job/YYYY-MM-DD/`.
 > Viết **sau 16:00**, xong **trước 20:00** cùng ngày. Review hàng ngày, không dồn T7.
 
-**Ngày:** YYYY-MM-DD
-**Reviewer:** @<reviewer>
-**Annotator:** @<annotator>
-**Vòng cố định:** xem [`phan-cong-review.md`](../../phan-cong-review.md) — `HHuy → Long → PHuy → Mạnh → Cường → HHuy`
-**File annotate nguồn:** `../YYYY-MM-DD/<annotator>-annotate.md` (bắt buộc link chéo)
+## Metadata
 
-## Đã review
+- **Ngày:** YYYY-MM-DD
+- **Reviewer:** @<reviewer>
+- **Annotator:** @<annotator>
+- **Vòng cố định:** xem [`phan-cong-review.md`](../../phan-cong-review.md) — `HHuy → Long → PHuy → Mạnh → Cường → HHuy`
+- **Source annotate file:** `../YYYY-MM-DD/<annotator>-annotate.md` (bắt buộc link chéo)
 
-| Task | Đã review | Mẫu kiểm | Link CVAT |
-|---|---|---|---|
-| A — Semantic Segmentation | _ / 25 | _% | `https://…/jobs/<id>?frame=<n>` |
-| B — BBox / Polygon / Polyline | _ / 25 | _% | `https://…/jobs/<id>?frame=<n>` |
-| **Tổng** | **_ / 50** | | |
+## Numbers
 
-> Nhóm trưởng annotate chỉ 25 ảnh thì review vẫn đủ số ảnh của annotator (50).
+- Task A (Seg): _ / 25 reviewed (sample check: _%)
+- Task B (BBox/Poly): _ / 25 reviewed (sample check: _%)
+- **Total: _ / 50**
 
-## Trả lại
+## What you found
 
-| # | Link frame | Lỗi | § guideline / QĐ | Mức |
-|---|---|---|---|---|
-| 1 | `https://…/jobs/<id>?frame=<n>` | … | § / QĐ-xxx | lẻ tẻ / hệ thống |
-| 2 | | | | |
+[Free prose. 3–5 sentences. Cover:
+- Overall quality impression (good patterns, common mistakes)
+- Systematic errors vs one-off mistakes
+- Which frames (link) had errors and what guideline/section applies
+- What the annotator got right that should continue]
 
-**Kết luận:** [ ] Pass — dưới 10% mẫu kiểm sai · [ ] Trả nguyên job — trên 10% (theo QĐ-002) · [ ] Pass có điều kiện — sửa _ ảnh lẻ
+## Terrible frames — agree / disagree with annotator
 
-## Ảnh tệ — đồng ý / không đồng ý với annotator
+[Free prose. For each frame the annotator flagged as "terrible", state whether you agree or disagree and why. Example:
+"Frame 142 — agree, blur makes it untestable, keep. Frame 201 — disagree, person on motorcycle is clearly separable, should have used box for each person per §3.2."]
 
-| # | Frame annotator đề xuất | Đồng ý? | Lý do |
-|---|---|---|---|
-| 1 | `frame=<n>` — đề xuất bỏ | ✅ / ❌ | … |
-| 2 | | | |
+## Verdict
 
-> Nếu cả hai đồng ý bỏ nhưng chưa có guideline, ghi `P-xxx` để chốt ở Duty 1/2. Không tự bỏ.
+- [ ] **Pass** — under 10% sample checked wrong
+- [ ] **Return whole job** — over 10% sample wrong (per QĐ-002)
+- [ ] **Pass with conditions** — fix _ specific frames
 
-## Góp ý cho annotate ngày mai
+## Escalate to P-xxx?
 
-- … (1–2 dòng, pattern lỗi hệ thống cần tránh)
+- [ ] No
+- [ ] Yes — `P-xxx`: [short description + link to backlog or say "to create"]
 
-## Cần escalate thành P-xxx?
+## Suggestion for tomorrow
 
-- [ ] Không
-- [ ] Có — `P-xxx`: … (link tới backlog, mô tả ngắn)
+[1–2 lines free prose: what pattern to avoid, what to focus on]
 
 ---
-*Link chéo: file này phải được trỏ tới từ `<annotator>-annotate.md` cùng ngày.*
+*Cross-link: this file must be referenced from `<annotator>-annotate.md` same day.*

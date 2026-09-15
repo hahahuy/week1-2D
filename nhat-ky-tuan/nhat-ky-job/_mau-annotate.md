@@ -1,54 +1,44 @@
 # Person-bit Annotate — @<ten> — YYYY-MM-DD
 
-> Copy file này thành `<ten>-annotate.md` trong thư mục `nhat-ky-job/YYYY-MM-DD/`.
+> Copy file này thành `<ten>-annotate.md` trong `nhat-ky-job/YYYY-MM-DD/`.
 > Viết cuối ngày, **trước 16:00** (deadline annotate). Làm nhiêu nộp bấy.
 
-**Ngày:** YYYY-MM-DD (T3/T4/T6 — ngày gán nhãn)
-**Người gán:** @<ten>
-**Reviewer của mình (vòng cố định):** @<người-kế-tiếp> — xem [`phan-cong-review.md`](../../phan-cong-review.md)
-**Link tới file review cùng ngày:** `../YYYY-MM-DD/<reviewer>-review-<ten>.md` (điền sau khi reviewer xong, hoặc để `chưa có`)
+## Metadata
 
-## Task hôm nay
+- **Ngày:** YYYY-MM-DD
+- **Annotator:** @<ten>
+- **Reviewer (vòng cố định):** @<người-kế-tiếp> — xem [`phan-cong-review.md`](../../phan-cong-review.md)
+- **Cross-link review:** `../YYYY-MM-DD/<reviewer>-review-<ten>.md` (điền `chưa có` nếu chưa xong)
 
-| Task | Số ảnh làm hôm nay | Lũy kế tuần | Link CVAT job/frame |
-|---|---|---|---|
-| A — Semantic Segmentation | _ / 25 | _ / 25 | `https://…/jobs/<id>?frame=<n>` |
-| B — BBox / Polygon / Polyline | _ / 25 | _ / 25 | `https://…/jobs/<id>?frame=<n>` |
-| **Tổng** | **_ / 50** | **_ / 50** | Nhóm trưởng chỉ làm 25 (1 task) |
+## Numbers
 
-> Nếu 1 task bị chặn (chờ QĐ), ghi `⛔` ở cột số lượng và trỏ tới `P-xxx`.
+- Task A (Seg): _ / 25 (lũy kế: _ / 25)
+- Task B (BBox/Poly): _ / 25 (lũy kế: _ / 25)
+- **Total: _ / 50**
+- Nhóm trưởng chỉ làm 25 (1 task)
 
-## Làm đúng
+## What happened
 
-- … (1–2 dòng, để tuần sau còn nhớ pattern nào làm trơn tru)
+[Free prose. 3–5 sentences max. Cover:
+- What pattern worked well today
+- What was confusing, slow, or wrong
+- Which CVAT frames (link) caused trouble and why
+- Any guideline gap encountered — if so, did you create `P-xxx`?]
 
-## Làm sai / lúng túng
+## Terrible frames
 
-- … (1–2 dòng + link frame nếu có)
-- Guideline § nào không trả lời được? → ghi `P-xxx` nếu cần tạo mới trong [`problem-backlog.md`](../../problem-backlog.md)
-
-## Ảnh tệ (terrible match) — đề xuất
-
-| # | Link CVAT frame | Vì sao tệ | Đề xuất |
-|---|---|---|---|
-| 1 | `https://…/jobs/<id>?frame=<n>` — mô tả ngắn | mờ / che khuất / sai phối cảnh … | bỏ / giữ / hỏi mentor |
-| 2 | | | |
-
-> Quy ước: annotator **đề xuất**, reviewer **đồng ý/không đồng ý** trong file review. Chưa có guideline thì chưa tự bỏ — chờ chốt ở Duty 1/2.
+[Free prose. List each frame with link, why it's terrible, and your proposal (keep / drop / ask mentor). Example:
+"Frame 142 — blurred car behind pillar, ~30% visible. Propose keep, occlusion is key edge case. Frame 201 — person sitting on motorcycle, guideline §3.2 ambiguous, propose ask mentor."]
 
 ## Blocker
 
-- [ ] Không có
-- [ ] Có — `P-xxx`: … (link tới backlog)
+- [ ] No blocker
+- [ ] Yes — `P-xxx`: [short link or description]
 
-## Đã ping reviewer chưa?
+## Cross-link verification
 
-- [ ] Rồi — @reviewer trước 16:00
-- [ ] Chưa
-
-## Ngày mai cần
-
-- …
+- [ ] Reviewer field above matches `phan-cong-review.md` rotation
+- [ ] Cross-link to review file is correct
 
 ---
-*Link chéo: reviewer sẽ trỏ ngược lại file này từ `<reviewer>-review-<ten>.md`.*
+*Reviewer will cross-link back to this file from `<reviewer>-review-<ten>.md`.*

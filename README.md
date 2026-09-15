@@ -10,7 +10,7 @@ Repo làm việc của một đội gán nhãn. Mỗi đội nhận một bản 
 | Đường dẫn | Dùng để | Cập nhật khi nào |
 |---|---|---|
 | [`nhat-ky-tuan/`](nhat-ky-tuan/) | Big report theo tuần: phân công, Duty 1 (T5) + Duty 2 (CN), tổng kết | Đầu tuần phân công, T5/CN tổng hợp |
-| [`nhat-ky-tuan/nhat-ky-job/`](nhat-ky-tuan/nhat-ky-job/) | **Person-bit** theo ngày: `*-annotate.md` + `*-review-*.md` (link chéo) | **Hàng ngày** — annotate trước 16:00, review trước 20:00 |
+| [`nhat-ky-tuan/nhat-ky-job/`](nhat-ky-tuan/nhat-ky-job/) | **Person-bit** hàng ngày: `*-annotate.md` + `*-review-*.md` (link chéo). Viết prose tự nhiên, see `WRITE_GUIDE.md` | **Hàng ngày** — annotate trước 16:00, review trước 20:00 |
 | [`nhat-ky-tuan/_mau-duty-1.md`](nhat-ky-tuan/_mau-duty-1.md) | Mẫu report Duty 1 (T5) — tổng hợp T2→T4 cho họp mentor | T5 |
 | [`nhat-ky-tuan/_mau-duty-2.md`](nhat-ky-tuan/_mau-duty-2.md) | Mẫu report Duty 2 (CN) — tổng hợp T6→T7, chốt tuần | CN |
 | [`phan-cong-review.md`](phan-cong-review.md) | Vòng review cố định + tracking 3 tuần | Đầu đợt, cập nhật T7/CN |
@@ -77,8 +77,9 @@ Một người có thể giữ nhiều vị trí, nhưng **không review job do 
 
 ```
 nhat-ky-tuan/nhat-ky-job/
-├── _mau-annotate.md              # mẫu
-├── _mau-review.md                # mẫu
+├── WRITE_GUIDE.md              # hướng dẫn viết person-bit cho annotator/reviewer
+├── _mau-annotate.md            # mẫu
+├── _mau-review.md              # mẫu
 └── YYYY-MM-DD/                   # 1 thư mục/ngày
     ├── hhuy-annotate.md          # HHuy log phần mình
     ├── long-review-hhuy.md       # Long review HHuy (theo vòng)
@@ -87,7 +88,9 @@ nhat-ky-tuan/nhat-ky-job/
     └── …
 ```
 
-Mỗi `*-annotate.md` có `Reviewer: @<kế tiếp>` và link tới file review cùng ngày; mỗi `*-review-*.md` có `Nguồn: link tới file annotate` — **link chéo bắt buộc** để hai người không lạc nhau.
+Mỗi `*-annotate.md` có metadata (date, reviewer handle, cross-link), numbers, and free-form prose sections. Mỗi `*-review-*.md` có metadata, numbers, verdict, and free-form prose. **Link chéo bắt buộc** cùng ngày — annotate → review và review → annotate.
+
+**Cách viết:** Viết bằng **ngôn ngữ tự nhiên**, không cần điền bảng hay checkbox cứng. Đảm bảo capture đủ 4 thông tin bắt buộc: (1) số ảnh done/total, (2) link CVAT frame cho ảnh tệ, (3) blocker/P-xxx, (4) verdict (review). Agent của mentor sẽ parse prose để extract structured data. Xem [`WRITE_GUIDE.md`](WRITE_GUIDE.md) cho ví dụ chi tiết.
 
 ### Từ person-bit lên big report
 

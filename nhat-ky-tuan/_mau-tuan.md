@@ -4,14 +4,13 @@
 > Tuần này kiểu data: 2D / Human Keypoint / 3D LiDAR — điền vào dòng dưới.
 
 **Lead tuần này:** @
-**Dữ liệu / task CVAT:** `https://…/tasks/<id>` — Task A: Semantic Segmentation (25 ảnh/ng) · Task B: BBox/Polygon/Polyline (25 ảnh/ng)
-**Nhóm trưởng tuần này (chỉ làm 25 ảnh):** Mạnh (Task A Seg, 25 ảnh) · Cường (Task B BBox/Polyline, 25 ảnh)
+**Dữ liệu / task CVAT:** `https://…/tasks/<id>`
+**Nhóm trưởng tuần này:** xem [`phan-cong-review.md`](../phan-cong-review.md)
 **Kiểu data tuần này:** 2D / Keypoint / 3D LiDAR
 
-## Vòng review cố định (không đổi 3 tuần)
+## Vòng review cố định
 
 `HHuy → Long → PHuy → Mạnh → Cường → HHuy` — xem [`phan-cong-review.md`](../phan-cong-review.md).
-Mỗi `person-bit annotate` link tới `person-bit review` cùng ngày trong [`nhat-ky-job/`](nhat-ky-job/).
 
 | Annotator | Reviewer | Batch tuần này | Ghi chú |
 |---|---|---|---|
@@ -20,8 +19,6 @@ Mỗi `person-bit annotate` link tới `person-bit review` cùng ngày trong [`n
 | PHuy (@) | Mạnh* (@) | 50 ảnh | Mạnh là nhóm trưởng Seg (25 ảnh) |
 | Mạnh* (@) | Cường* (@) | 25 ảnh (Seg) + review 50 | **Nhóm trưởng Seg — chỉ gán 25, review đủ 50** |
 | Cường* (@) | HHuy (@) | 25 ảnh (BBox) + review 50 | **Nhóm trưởng BBox — chỉ gán 25, review đủ 50** |
-
-> Mạnh review PHuy (theo vòng), Cường review Mạnh (theo vòng). Nhóm trưởng review đủ 50 ảnh của người trước dù chỉ gán 25.
 
 ## Thành viên và phân công
 
@@ -34,32 +31,14 @@ Mỗi `person-bit annotate` link tới `person-bit review` cùng ngày trong [`n
 | Mạnh | **Nhóm trưởng Seg** (25 ảnh Seg) + review PHuy 50 ảnh | Seg 25 ảnh, review theo vòng |
 | Cường | **Nhóm trưởng BBox** (25 ảnh BBox) + review Mạnh 50 ảnh | BBox 25 ảnh, review theo vòng |
 
-> Mạnh: nhóm trưởng Task A Semantic Segmentation (25 ảnh), review theo vòng PHuy.
-> Cường: nhóm trưởng Task B BBox/Polygon/Polyline (25 ảnh), review theo vòng Mạnh.
-> Nhóm trưởng chỉ gán 25 ảnh nhưng review đủ 50 ảnh của người trước.
-
-## Công việc (theo cadence T2→CN)
-
-| # | Nội dung | Annotator | Reviewer | Hoàn thành | Ghi chú |
-|---|---|---|---|---|---|
-| 1 | T2 Nhận Job — Lead chia batch | — | — | ⬜ 0% | 25+25 / người |
-| 2 | T3 Gán đợt 1 | @ | @ | ⬜ 0% | person-bit `nhat-ky-job/YYYY-MM-DD/` 16:00/20:00 |
-| 3 | T4 Nộp phần đầu (làm nhiêu nộp bấy) + Report | @ | @ | ⬜ 0% | review T4 xong trước 21:00 để họp T5 |
-| 4 | T5 Mentor Duty 1 — họp online | Lead | — | ⬜ 0% | dùng `_mau-duty-1.md` |
-| 5 | T6 Gán đợt 2 | @ | @ | ⬜ 0% | 16:00/20:00 |
-| 6 | T7 Đóng batch trước 20:00 | @ | @ | ⬜ 0% |  |
-| 7 | CN Mentor Duty 2 — chốt tuần | Lead | — | ⬜ 0% | dùng `_mau-duty-2.md` |
-
-Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) · ⛔ bị chặn (ghi P-xxx) · ⬜ chưa bắt đầu
-
-## Duty 1 — T5 (tổng hợp T2→T4, copy từ `_mau-duty-1.md` hoặc link tới file duty)
+## Duty 1 — T5 (tổng hợp T2→T4, xem `tuan-NN-duty-1.md` hoặc điền trực tiếp ở dưới)
 
 > Lead điền sau khi review T4 xong trước 21:00 T4. Dùng để họp mentor T5.
 
 - Link report Duty 1: `./tuan-NN-duty-1.md` hoặc điền trực tiếp dưới đây
-- Tóm tắt: … (sẽ aggregate từ `nhat-ky-job/`)
+- Tóm tắt: … (aggregate từ `nhat-ky-job/`)
 
-## Duty 2 — CN (tổng hợp T6→T7, copy từ `_mau-duty-2.md`)
+## Duty 2 — CN (tổng hợp T6→T7, xem `tuan-NN-duty-2.md` hoặc điền trực tiếp)
 
 > Lead điền sau T7 20:00.
 
@@ -80,16 +59,14 @@ Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) 
 ## Kế hoạch tuần sau
 
 - Kiểu data tuần sau: …
-- Nhóm trưởng tuần sau (random T2): Task A: @__, Task B: @__
+- Nhóm trưởng tuần sau (random T2): Task A: @__ · Task B: @__
 - Vòng review: giữ nguyên `HHuy → Long → PHuy → Mạnh → Cường → HHuy`
 
 ---
 ### Cách aggregate person-bit vào tuần (cho Lead)
 
 ```bash
-# Đếm person-bit đã nộp
-ls nhat-ky-job/2026-09-1*/*-annotate.md nhat-ky-job/2026-09-1*/*-review-*.md 2>/dev/null | wc -l
-# Hoặc mở từng ngày YYYY-MM-DD và copy 4 số vào bảng Duty 1/2
+ls nhat-ky-job/*-annotate.md nhat-ky-job/*-review-*.md 2>/dev/null | wc -l
 ```
 
 *Person-bit hàng ngày ở [`nhat-ky-job/`](nhat-ky-job/) — mỗi annotate trước 16:00, review trước 20:00, link chéo cùng ngày.*

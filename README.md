@@ -11,8 +11,7 @@ Repo làm việc của một đội gán nhãn. Mỗi đội nhận một bản 
 |---|---|---|
 | [`nhat-ky-tuan/`](nhat-ky-tuan/) | Big report theo tuần: phân công, Duty 1 (T5) + Duty 2 (CN), tổng kết | Đầu tuần phân công, T5/CN tổng hợp |
 | [`nhat-ky-tuan/nhat-ky-job/`](nhat-ky-tuan/nhat-ky-job/) | **Person-bit** hàng ngày: `*-annotate.md` + `*-review-*.md` (link chéo). Viết prose tự nhiên, see `WRITE_GUIDE.md` | **Hàng ngày** — annotate trước 16:00, review trước 20:00 |
-| [`nhat-ky-tuan/_mau-duty-1.md`](nhat-ky-tuan/_mau-duty-1.md) | Mẫu report Duty 1 (T5) — tổng hợp T2→T4 cho họp mentor | T5 |
-| [`nhat-ky-tuan/_mau-duty-2.md`](nhat-ky-tuan/_mau-duty-2.md) | Mẫu report Duty 2 (CN) — tổng hợp T6→T7, chốt tuần | CN |
+| [`nhat-ky-tuan/_mau-tuan.md`](nhat-ky-tuan/_mau-tuan.md) | Weekly report + Duty 1 (T5) + Duty 2 (CN) template | Đầu tuần, T5/CN |
 | [`phan-cong-review.md`](phan-cong-review.md) | Vòng review cố định + tracking 3 tuần | Đầu đợt, cập nhật T7/CN |
 | [`problem-backlog.md`](problem-backlog.md) | Edge case gặp khi gán nhãn mà guideline chưa trả lời được, kèm link CVAT | **Ngay khi gặp** |
 | [`so-quyet-dinh.md`](so-quyet-dinh.md) | Những gì đội đã chốt, và vì sao | Mỗi lần chốt một vấn đề |
@@ -24,8 +23,8 @@ Repo làm việc của một đội gán nhãn. Mỗi đội nhận một bản 
 flowchart TB
     A[Gán nhãn trên CVAT] -->|hàng ngày| P1[nhat-ky-job/<br/>person-bit annotate<br/>trước 16:00]
     P1 -->|sau 16:00| P2[nhat-ky-job/<br/>person-bit review<br/>trước 20:00]
-    P1 & P2 -->|T5 Duty 1<br/>T2→T4| D1[nhat-ky-tuan/<br/>Duty 1 report]
-    P1 & P2 -->|CN Duty 2<br/>T6→T7| D2[nhat-ky-tuan/<br/>Duty 2 + tổng kết tuần]
+    P1 & P2 -->|T5 Duty 1| D1[nhat-ky-tuan/<br/>tuan-NN.md § Duty 1]
+    P1 & P2 -->|CN Duty 2| D2[nhat-ky-tuan/<br/>tuan-NN.md § Duty 2]
     P1 -.->|guideline không trả lời được| B[problem-backlog.md<br/>P-xxx + link CVAT]
     P2 -.->|lỗi hệ thống| B
     B -->|đội bàn và chốt| C[so-quyet-dinh.md<br/>QĐ-xxx]
@@ -93,9 +92,9 @@ Mỗi `*-annotate.md` có metadata (date, reviewer handle, cross-link), numbers,
 
 ### Từ person-bit lên big report
 
-1. Hàng ngày: mỗi người tự log `person-bit` (đúng/sai, ảnh tệ + link CVAT, blocker `P-xxx`).
-2. T5: Lead aggregate `nhat-ky-job/T2→T4` vào `nhat-ky-tuan/tuan-NN.md` § Duty 1 (dùng [`_mau-duty-1.md`](nhat-ky-tuan/_mau-duty-1.md)) — mang đi họp mentor.
-3. CN: Lead aggregate `T6→T7` vào § Duty 2 (dùng [`_mau-duty-2.md`](nhat-ky-tuan/_mau-duty-2.md)) — chốt tuần, tạo `QĐ-xxx` nếu cần, copy 3 số chính vào § Tổng kết.
+1. Hàng ngày: mỗi người tự log `person-bit` (prose tự nhiên, xem `WRITE_GUIDE.md`).
+2. T5: Lead aggregate `nhat-ky-job/T2→T4` vào `nhat-ky-tuan/tuan-NN.md` § Duty 1 — mang đi họp mentor.
+3. CN: Lead aggregate `T6→T7` vào § Duty 2 — chốt tuần, tạo `QĐ-xxx` nếu cần.
 
 ### Lịch 3 tuần
 

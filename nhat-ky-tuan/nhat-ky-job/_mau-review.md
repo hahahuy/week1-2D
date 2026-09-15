@@ -9,7 +9,7 @@
 - **Reviewer:** @<reviewer>
 - **Annotator:** @<annotator>
 - **Vòng cố định:** xem [`phan-cong-review.md`](../../phan-cong-review.md) — `HHuy → Long → PHuy → Mạnh → Cường → HHuy`
-- **Source annotate file:** `../YYYY-MM-DD/<annotator>-annotate.md` (bắt buộc link chéo)
+- **Source annotate file:** `<annotator>-annotate.md` (bắt buộc link chéo)
 
 ## Numbers
 

@@ -8,7 +8,7 @@
 - **Ngày:** YYYY-MM-DD
 - **Annotator:** @<ten>
 - **Reviewer (vòng cố định):** @<người-kế-tiếp> — xem [`phan-cong-review.md`](../../phan-cong-review.md)
-- **Cross-link review:** `../YYYY-MM-DD/<reviewer>-review-<ten>.md` (điền `chưa có` nếu chưa xong)
+- **Cross-link review:** `<reviewer>-review-<ten>.md` (điền `chưa có` nếu chưa xong)
 
 ## Numbers
 

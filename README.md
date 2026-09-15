@@ -68,7 +68,8 @@ Một người có thể giữ nhiều vị trí, nhưng **không review job do 
 
 ### Batch & vòng review
 
-- **Batch:** 25 ảnh / task / người = **50 ảnh/tuần/người**. 2 nhóm trưởng (random T2) chỉ làm **25 ảnh (1 task)** nhưng vẫn review đủ 50 của người trước.
+- **Batch:** 25 ảnh / task / người = **50 ảnh/tuần/người**.
+  **Nhóm trưởng hiện tại tuần 01:** Mạnh = nhóm trưởng Task A Semantic Segmentation (25 ảnh), Cường = nhóm trưởng Task B BBox/Polygon/Polyline (25 ảnh). Nhóm trưởng chỉ làm 25 ảnh nhưng vẫn review đủ 50 của người trước.
 - **Vòng review cố định 3 tuần:** `HHuy → Long → PHuy → Mạnh → Cường → HHuy` — xem [`phan-cong-review.md`](phan-cong-review.md). Không tự review, không đổi vòng giữa chừng.
 - **Ảnh tệ (terrible match):** Annotator đề xuất trong `*-annotate.md`, reviewer đồng ý/không trong `*-review-*.md`. Chưa có guideline thì chưa tự bỏ — chờ chốt ở Duty 1/2 thành `QĐ-xxx`.
 
@@ -98,7 +99,7 @@ Mỗi `*-annotate.md` có `Reviewer: @<kế tiếp>` và link tới file review 
 
 | Tuần | Ngày | Kiểu data | Nhóm trưởng (random T2) |
 |---|---|---|---|
-| 01 | 14–20/09/2026 | 2D | Task A: @__ · Task B: @__ |
+| 01 | 14–20/09/2026 | 2D | Mạnh (Seg) · Cường (BBox) |
 | 02 | 21–27/09/2026 | Human Keypoint | Task A: @__ · Task B: @__ |
 | 03 | 28/09–04/10/2026 | 3D LiDAR | Task A: @__ · Task B: @__ |
 

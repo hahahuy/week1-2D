@@ -10,17 +10,17 @@
 
 ## 1. Tiến độ T2→T4 (làm nhiêu nộp bấy)
 
-| Thành viên | Task A (_/25) | Task B (_/25) | Tổng (_/50) | Reviewer | Tỉ lệ trả lại (review T4) | Blocker |
+| Thành viên | Task A Seg (_/25) | Task B BBox (_/25) | Tổng (_/50) | Reviewer | Tỉ lệ trả lại (review T4) | Blocker |
 |---|---|---|---|---|---|---|
 | HHuy (@) | _ / 25 | _ / 25 | _ / 50 | Long | _% | P-xxx / — |
 | Long (@) | _ / 25 | _ / 25 | _ / 50 | PHuy | _% | — |
-| PHuy (@) | _ / 25 | _ / 25 | _ / 50 | Mạnh | _% | — |
-| Mạnh (@) | _ / 25 | _ / 25 | _ / 50 | Cường | _% | — |
-| Cường (@) | _ / 25 | _ / 25 | _ / 50 | HHuy | _% | — |
+| PHuy (@) | _ / 25 | _ / 25 | _ / 50 | Mạnh* | _% | — |
+| Mạnh* (@) | _ / 25 **(nhóm trưởng Seg)** | — | _ / 25 | Cường* | _% | — |
+| Cường* (@) | — | _ / 25 **(nhóm trưởng BBox)** | _ / 25 | HHuy | _% | — |
 
-> Nhóm trưởng tuần này: Task A: @__ , Task B: @__ (chỉ làm 25 ảnh). Ghi rõ để khỏi nhầm %.
-
-**Tổng team T2→T4:** _ / 250 ảnh (5 người × 50, trừ nhóm trưởng).
+> **Nhóm trưởng tuần 01:** Mạnh = nhóm trưởng Task A Semantic Segmentation (25 ảnh), Cường = nhóm trưởng Task B BBox/Polygon/Polyline (25 ảnh).
+> Mạnh review PHuy, Cường review Mạnh (theo vòng). Nhóm trưởng review đủ 50 ảnh của người trước.
+> **Tổng team T2→T4:** _ / 250 ảnh (5 người × 50, nhưng Mạnh + Cường chỉ gán 25 mỗi người).
 
 ## 2. Khó khăn / lúng túng (từ person-bit annotate)
 

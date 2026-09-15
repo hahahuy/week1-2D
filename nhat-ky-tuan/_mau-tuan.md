@@ -5,7 +5,7 @@
 
 **Lead tuần này:** @
 **Dữ liệu / task CVAT:** `https://…/tasks/<id>` — Task A: Semantic Segmentation (25 ảnh/ng) · Task B: BBox/Polygon/Polyline (25 ảnh/ng)
-**Nhóm trưởng tuần này (chỉ làm 25 ảnh):** Task A: @__ · Task B: @__
+**Nhóm trưởng tuần này (chỉ làm 25 ảnh):** Mạnh (Task A Seg, 25 ảnh) · Cường (Task B BBox/Polyline, 25 ảnh)
 **Kiểu data tuần này:** 2D / Keypoint / 3D LiDAR
 
 ## Vòng review cố định (không đổi 3 tuần)
@@ -13,25 +13,30 @@
 `HHuy → Long → PHuy → Mạnh → Cường → HHuy` — xem [`phan-cong-review.md`](../phan-cong-review.md).
 Mỗi `person-bit annotate` link tới `person-bit review` cùng ngày trong [`nhat-ky-job/`](nhat-ky-job/).
 
-| Annotator | Reviewer | Batch tuần này |
-|---|---|---|
-| HHuy (@) | Long (@) | 50 ảnh (25+25) — nhóm trưởng 25 |
-| Long (@) | PHuy (@) | 50 ảnh |
-| PHuy (@) | Mạnh (@) | 50 ảnh |
-| Mạnh (@) | Cường (@) | 50 ảnh |
-| Cường (@) | HHuy (@) | 50 ảnh |
+| Annotator | Reviewer | Batch tuần này | Ghi chú |
+|---|---|---|---|
+| HHuy (@) | Long (@) | 50 ảnh (25+25) | |
+| Long (@) | PHuy (@) | 50 ảnh | |
+| PHuy (@) | Mạnh* (@) | 50 ảnh | Mạnh là nhóm trưởng Seg (25 ảnh) |
+| Mạnh* (@) | Cường* (@) | 25 ảnh (Seg) + review 50 | **Nhóm trưởng Seg — chỉ gán 25, review đủ 50** |
+| Cường* (@) | HHuy (@) | 25 ảnh (BBox) + review 50 | **Nhóm trưởng BBox — chỉ gán 25, review đủ 50** |
+
+> Mạnh review PHuy (theo vòng), Cường review Mạnh (theo vòng). Nhóm trưởng review đủ 50 ảnh của người trước dù chỉ gán 25.
 
 ## Thành viên và phân công
 
 | Thành viên | Vị trí | Phân công tuần này |
 |---|---|---|
 |  | Lead | Chia job T2, tổng hợp Duty 1 (T5) + Duty 2 (CN), giữ `so-quyet-dinh.md` |
-|  | Annotator | 50 ảnh (25+25) — person-bit annotate hàng ngày trước 16:00 |
-|  | Annotator | 50 ảnh |
-|  | Annotator | 50 ảnh |
-|  | Reviewer (kiêm Annotator) | Review person-bit của người trước, xong trước 20:00 hàng ngày |
+| HHuy | Annotator | 50 ảnh (25+25) — person-bit 16:00, review Cường 20:00 |
+| Long | Annotator | 50 ảnh (25+25) — review HHuy, person-bit 16:00/20:00 |
+| PHuy | Annotator | 50 ảnh (25+25) — review Mạnh (nhóm trưởng Seg), person-bit 16:00/20:00 |
+| Mạnh | **Nhóm trưởng Seg** (25 ảnh Seg) + review PHuy 50 ảnh | Seg 25 ảnh, review theo vòng |
+| Cường | **Nhóm trưởng BBox** (25 ảnh BBox) + review Mạnh 50 ảnh | BBox 25 ảnh, review theo vòng |
 
-> Nhóm trưởng chỉ làm 25 ảnh (1 task) nhưng vẫn review đủ 50 ảnh của người trước.
+> Mạnh: nhóm trưởng Task A Semantic Segmentation (25 ảnh), review theo vòng PHuy.
+> Cường: nhóm trưởng Task B BBox/Polygon/Polyline (25 ảnh), review theo vòng Mạnh.
+> Nhóm trưởng chỉ gán 25 ảnh nhưng review đủ 50 ảnh của người trước.
 
 ## Công việc (theo cadence T2→CN)
 

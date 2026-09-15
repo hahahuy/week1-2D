@@ -8,19 +8,21 @@
 
 | # | Annotator | Handle | Reviewer | Handle reviewer | Batch tuần |
 |---|---|---|---|---|---|
-| 1 | HHuy | @empty | Long | @empty | 50 ảnh (25+25), nhóm trưởng 25 |
+| 1 | HHuy | @empty | Long | @empty | 50 ảnh (25+25) |
 | 2 | Long | @empty | PHuy | @empty | 50 ảnh |
-| 3 | PHuy | @empty | Mạnh | @empty | 50 ảnh |
-| 4 | Mạnh | @empty | Cường | @empty | 50 ảnh |
-| 5 | Cường | @empty | HHuy | @empty | 50 ảnh |
+| 3 | PHuy | @empty | Mạnh* | @empty | 50 ảnh — **nhóm trưởng Seg (25)** |
+| 4 | Mạnh* | @empty | Cường* | @empty | 50 ảnh — **nhóm trưởng BBox (25)** |
+| 5 | Cường* | @empty | HHuy | @empty | 50 ảnh — **nhóm trưởng BBox (25)** |
 
-**Nhóm trưởng mỗi tuần (chỉ làm 25 ảnh / 1 task, random T2):**
+> Mạnh và Cường là nhóm trưởng tuần 01: Mạnh làm 25 ảnh Seg, Cường làm 25 ảnh BBox.
+> Mạnh vẫn review PHuy (vòng cố định), Cường vẫn review Mạnh (vòng cố định).
+> Nhóm trưởng review đủ 50 ảnh của người trước dù chỉ gán 25.
+
+**Nhóm trưởng tuần hiện tại (chỉ làm 25 ảnh / 1 task):**
 
 | Tuần | Kiểu data | Nhóm trưởng Task A (Seg) | Nhóm trưởng Task B (BBox/Poly) | Ghi chú |
 |---|---|---|---|---|
-| 01 · 14–20/09/2026 | 2D | @empty | @empty | T2 random |
-| 02 · 21–27/09/2026 | Human Keypoint | @empty | @empty |  |
-| 03 · 28/09–04/10/2026 | 3D LiDAR | @empty | @empty |  |
+| 01 · 14–20/09/2026 | 2D | **Mạnh** (25 ảnh) | **Cường** (25 ảnh) | Chốt, không random |
 
 ## Tracking theo tuần (Lead cập nhật T7/CN)
 

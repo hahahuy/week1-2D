@@ -14,9 +14,11 @@
 |---|---|---|---|---|---|---|
 | HHuy (@) | _ | _ | _ / 50 | Long | _% | ✅ / 🟡 / ⛔ |
 | Long (@) | _ | _ | _ / 50 | PHuy | _% | ✅ / 🟡 / ⛔ |
-| PHuy (@) | _ | _ | _ / 50 | Mạnh | _% | ✅ / 🟡 / ⛔ |
-| Mạnh (@) | _ | _ | _ / 50 | Cường | _% | ✅ / 🟡 / ⛔ |
-| Cường (@) | _ | _ | _ / 50 | HHuy | _% | ✅ / 🟡 / ⛔ |
+| PHuy (@) | _ | _ | _ / 50 | Mạnh* | _% | ✅ / 🟡 / ⛔ |
+| Mạnh* (@) | _ | _ | _ / 25 **(nhóm trưởng Seg)** | Cường* | _% | ✅ / 🟡 / ⛔ |
+| Cường* (@) | _ | _ | _ / 25 **(nhóm trưởng BBox)** | HHuy | _% | ✅ / 🟡 / ⛔ |
+
+> **Nhóm trưởng tuần 01:** Mạnh = nhóm trưởng Task A Semantic Segmentation (25 ảnh), Cường = nhóm trưởng Task B BBox/Polygon/Polyline (25 ảnh).
 
 **Tổng team cả tuần:** _ / 250 ảnh. Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm · ⛔ bị chặn (ghi P-xxx) · ⬜ chưa bắt đầu
 
@@ -47,7 +49,8 @@
 
 - Kiểu data tuần sau: …
 - Job mới: …
-- Nhóm trưởng tuần sau (random): Task A: @__, Task B: @__
+- Nhóm trưởng tuần sau (random): Task A: @__ · Task B: @__
+> **Tuần 01 đã chốt:** Mạnh (Seg) · Cường (BBox). Tuần 2/3 có thể random lại.
 - Có xoay vòng review không? — Mặc định **không**, giữ `HHuy → Long → PHuy → Mạnh → Cường → HHuy`
 
 ---

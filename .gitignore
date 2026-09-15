@@ -1,0 +1,5 @@
+# Claude Code
+.claude/
+
+# Handoff documents (internal working notes)
+docs/handoff/

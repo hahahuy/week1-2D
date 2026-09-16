@@ -18,11 +18,9 @@
 
 ## What happened
 
-[Free prose. 3–5 sentences max. Cover:
-- What pattern worked well today
-- What was confusing, slow, or wrong
-- Which CVAT frames (link) caused trouble and why
-- Any guideline gap encountered — if so, did you create `P-xxx`?]
+- tại w1/bbox_polygon/G02/G02_B074.jpg trong ảnh chỉ nhìn thấy ánh đèn của xe phía trước, có thể xác định là có phương tiện nhưng không nhìn rõ thân xe và ranh giới của vehicle. Trường hợp này có cần tạo bounding box không, hay bỏ qua vì không đủ thông tin để xác định box chính xác? 
+- w1/bbox_polygon/G02/G02_B062.jpg trong trường hợp không nhìn thấy rõ lề đường/vỉa hè nên không thể xác định được ranh giới ngoài của area/drivable, thì nên annotation như thế nào? Có nên chỉ vẽ đến vùng mà mình chắc chắn là xe có thể chạy, hay vẫn phải suy đoán phần ranh giới bị khuất/không thể nhận biết?
+- w1/bbox_polygon/G02/G02_B061.jpg có phần cầu vượt thì nên đánh bouding box và tên label là gì ?
 
 ## Terrible frames
 

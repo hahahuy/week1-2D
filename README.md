@@ -88,7 +88,7 @@ nhat-ky-tuan/nhat-ky-job/
 
 Mỗi `*-annotate.md` có metadata (date, reviewer handle, cross-link), numbers, and free-form prose sections. Mỗi `*-review-*.md` có metadata, numbers, verdict, and free-form prose. **Link chéo bắt buộc** cùng ngày — annotate → review và review → annotate. File có ngày trong tên, không cần folder ngày riêng.
 
-**Cách viết:** Viết bằng **ngôn ngữ tự nhiên**, không cần điền bảng hay checkbox cứng. Đảm bảo capture đủ 4 thông tin bắt buộc: (1) số ảnh done/total, (2) link CVAT frame cho ảnh tệ, (3) blocker/P-xxx, (4) verdict (review). Agent của mentor sẽ parse prose để extract structured data. Xem [`WRITE_GUIDE.md`](WRITE_GUIDE.md) cho ví dụ chi tiết.
+**Cách viết:** Viết bằng **ngôn ngữ tự nhiên**, không cần điền bảng hay checkbox cứng. Đảm bảo capture đủ 4 thông tin bắt buộc: (1) số ảnh done/total, (2) link CVAT frame (hoặc tên file của frame) cho ảnh tệ, (3) blocker/P-xxx, (4) review lại. Agent của HHuy sẽ tự rephrase để xuất ra structured data. Xem [`WRITE_GUIDE.md`](WRITE_GUIDE.md) cho ví dụ chi tiết.
 
 ### Từ person-bit lên big report
 

@@ -20,11 +20,15 @@
 
 ## What happened
 
-[Free prose. 3–5 sentences max. Cover:
-- What pattern worked well today
-- What was confusing, slow, or wrong
-- Which CVAT frames (link) caused trouble and why
-- Any guideline gap encountered — if so, did you create `P-xxx`?]
++ w1/bbox_polygon/G02/G02_B001.jpg, đánh giá lại road curb ở hai bên, có phải là alternative area không; nếu là other line hoặc double white line thì nên vẽ như thế nào, và cần đi hết tất cả các vạch trắng hay chỉ cần polygon đi theo đường thẳng để label là được.
++ w1/bbox_polygon/G02/G02_B002.jpg, ảnh mờ, cần review; không xác định được alternative area, đèn giao thông là reflection, không rõ lề đường và vạch kẻ.
++ w1/bbox_polygon/G02/G02_B003.jpg, chưa phân biệt được nét đứt và nét liền; các vạch mang cá hoặc vạch dừng cho làn khẩn cấp có phải alternative area không; road curb là chỉ đường kẻ vàng mép lề hay toàn khu vực lề đường.
++ w1/bbox_polygon/G02/G02_B004.jpg, item 48 không chắc chắn là bicycle hay chỉ thuần pedestrian.
++ w1/bbox_polygon/G02/G02_B008.jpg, chưa xác định được các line bên trái có thể xem là alternative area, road curb hay chỉ là single white line hoặc double white line.
++ w1/bbox_polygon/G02/G02_B010.jpg, vạch kẻ qua đường cho người đi bộ cần vẽ 1 polyline ở giữa tim line marking theo guideline hay phải vẽ rõ từng đường một với mỗi vạch trắng.
++ w1/bbox_polygon/G02/G02_B011.jpg, không xác định được vạch bên trái là cho người đi bộ hay double white line.
++ w1/bbox_polygon/G02/G02_B006.jpg, w1/bbox_polygon/G02/G02_B009.jpg, w1/bbox_polygon/G02/G02_B012.jpg, không xác định rõ double yellow line hay other line; các đường như thế vẽ polyline chỉ là các đường thẳng theo hướng xe chạy hay cả các vạch ngang nữa.
++ Những frame rõ như G02_B005.jpg, G02_B007.jpg thì làm tương đối ổn theo guideline; phần khó nhất là phân biệt line / road curb / alternative area ở các frame mờ hoặc có vạch chồng lẫn.
 
 ## Terrible frames
 

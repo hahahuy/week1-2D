@@ -33,7 +33,7 @@
 | # | Nội dung công việc | Annotator | Reviewer | Hoàn thành | Ghi chú |
 |---|---|---|---|---|---|
 | 1 | T2 Nhận Job — Lead chia batch | — | — | ⬜ 0% | 25+25 / người |
-| 2 | T3 Gán đợt 1 | @HHuy, @Long, @PHuy, @Mạnh, @Cường | @Long, @PHuy, @Mạnh, @Cường, @HHuy | ⬜ 0% | person-bit `nhat-ky-job/` 16:00/20:00 |
+| 2 | T3 Gán đợt 1 | @HHuy, @Long, @PHuy, @Mạnh, @Cường | @Long, @PHuy, @Mạnh, @Cường, @HHuy | 🟡 Số lượng chưa báo cáo | Đã nhận đủ 5 person-bit annotate; không dùng review trong tổng hợp này |
 | 3 | T4 Nộp phần đầu + Report | Mỗi người | Mỗi người | ⬜ 0% | review T4 xong trước 21:00 để họp T5 |
 | 4 | T5 Mentor Duty 1 — họp online | Lead | — | ⬜ 0% | dùng § Duty 1 trong `tuan-01.md` |
 | 5 | T6 Gán đợt 2 | Mỗi người | Mỗi người | ⬜ 0% | 16:00/20:00 |
@@ -44,14 +44,30 @@ Mức hoàn thành: ✅ xong **và đã qua review** · 🟡 đang làm (ghi %) 
 
 ## Tổng kết
 
-- Đã gán: _ / 250 ảnh (_%) — 5 người × 50 (nhóm trưởng × 25)
-- Qua review lần đầu: _% (trả lại _ ảnh)
-- Edge case mới / đã chốt: P-xxx → QĐ-xxx
-- Ảnh tệ: _ đề xuất → _ đồng ý bỏ/giữ
+### Tổng hợp annotate — 15/09/2026
+
+| Annotator | Task A (Seg) | Task B (BBox/Poly) | Tổng | Trạng thái / ghi nhận |
+|---|---:|---:|---:|---|
+| HHuy | Chưa báo cáo / 25 | Chưa báo cáo / 25 | Chưa báo cáo / 50 | Ghi nhận vướng mắc về phạm vi area, class đối tượng và ảnh tối/mưa |
+| Long | Chưa báo cáo / 25 | Chưa báo cáo / 25 | Chưa báo cáo / 50 | Ghi nhận vướng mắc về biển báo, cầu, hàng rào, ranh giới khu vực lái và xe chỉ thấy đèn |
+| PHuy | Chưa báo cáo / 25 | Chưa báo cáo / 25 | Chưa báo cáo / 50 | Báo blocker về pixel không thuộc 19 class |
+| Mạnh | Chưa báo cáo / 25 | — | Chưa báo cáo / 25 | Ghi nhận ca che khuất, ánh sáng kém và ranh giới road/sidewalk |
+| Cường | — | Chưa báo cáo / 25 | Chưa báo cáo / 25 | Ghi nhận vướng mắc về line, road curb và alternative area |
+| **Tổng** | **Chưa báo cáo / 100** | **Chưa báo cáo / 100** | **Chưa báo cáo / 200** | Tổng quota theo phân công: 200 ảnh |
+
+- Đã nhận: 5/5 person-bit annotate.
+- Số ảnh đã gán: chưa thể tổng hợp vì cả 5 file để trống trường `Numbers`.
+- Review: không tổng hợp theo phạm vi báo cáo annotate.
+- Edge case mới: P-004 đến P-008 đang mở; chưa có quyết định mới.
+- Ảnh tệ: chỉ HHuy đề cập G02_B028 là near-terrible; chưa có đề xuất keep/drop/ask trong mục `Terrible frames`.
 
 ## Vướng mắc
 
-- P-xxx nào chưa chốt, job nào dừng, đã hỏi mentor/BTC chưa
+- P-004: Quy tắc phân biệt và vẽ `drivable area`, `alternative area`, road curb và line marking.
+- P-005: Phạm vi class BBox/Polygon cho biển tên đường, traffic light, cầu, hàng rào và vật thể chỉ thấy một phần.
+- P-006: Cách xử lý biên không nhìn rõ do tối, mưa, phản xạ, mờ hoặc che khuất.
+- P-007: Label segmentation cho vật thể/pixel ngoài 19 class, gồm tuyết, cầu, barrier, cone và bollard.
+- P-008: Quy tắc segmentation cho road/sidewalk bị che, phản chiếu, lóa hoặc khó phân ranh giới.
 
 ## Kế hoạch tuần 02
 

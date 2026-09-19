@@ -5,7 +5,7 @@
 
 ## Metadata
 
-- **Ngày:** 2026-09-15
+- **Ngày:** 2026-09-19
 - **Reviewer:** @Long
 - **Annotator:** @HHuy
 - **Vòng cố định:** xem [`phan-cong-review.md`](../../phan-cong-review.md) — `HHuy → Long → PHuy → Mạnh → Cường → HHuy`
@@ -14,16 +14,14 @@
 ## Numbers
 
 - Task A (Seg): _ / 25 reviewed (sample check: _%)
-- Task B (BBox/Poly): _ / 25 reviewed (sample check: _%)
+- Task B (BBox/Poly): 25 / 25 reviewed (sample check: _%)
 - **Total: _ / 50**
 
 ## What you found
 
-[Free prose. 3–5 sentences. Cover:
-- Overall quality impression (good patterns, common mistakes)
-- Systematic errors vs one-off mistakes
-- Which frames (link) had errors and what guideline/section applies
-- What the annotator got right that should continue]
+- Frame: w1/bbox_polygon/G02/G02_B031.jpg: Đánh sai polyline cho cross walk , phải đánh 2 line ở trên và dưới cross walk
+- Frame: w1/bbox_polygon/G02/G02_B032.jpg: Không rõ vạch nét đứt là single white hay single other, cần xác nhận và đánh lại
+- Frame: w1/bbox_polygon/G02/G02_B038.jpg: Đánh thiếu polyline
 
 ## Terrible frames — agree / disagree with annotator
 
